@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2021_05_17_193805) do
     t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.boolean "is_member_only", default: false, null: false
+    t.boolean "is_member_only", default: true, null: false
     t.index ["user_id"], name: "index_articles_on_user_id"
   end
 
